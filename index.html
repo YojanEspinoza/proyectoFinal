@@ -1,11 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>El Rinconcito</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/LOGO.jpg">
 </head>
 <body>
-    
+    <!--Contenedor del encabezado de la página donde vienen las opciones para navegar-->
+    <header class="encabezado">
+        <a href="index.html" class="logo">
+            <img src="img/LOGO.jpg" class="logoimg">
+            <h2 class="nombre">El Rinconcito</h2>
+        </a>
+        <!--Contenedor donde se almacenan los diferentes links para navegar-->
+        <div>
+            <a href="index.html" class="links">Menú Principal</a>
+            <a href="menucomida.html" class="links">Menú de comida</a>
+            <a href="galeria.html" class="links">Galería</a>
+            <a href="promociones.html" class="links">Promociones</a>
+        </div> 
+    </header>
+
+<!--Contenido de la pagina-->
+    <section class="banner">
+        <div class="lema">
+            <h2>Comida y desayuno <br>
+                para toda la familia.</h2>
+        </div>
+    </section>
+
+    <!--Utilizaré este div para poder separar las secciones visualmente-->
+    <div class="separador"></div>
+    <!--Bienvenida-->
+    <section class="bienvenida">
+        <div class="presentacion">
+            <h2>¡Bienvenido!</h2>
+            <p>El Rinconcito te recibe con una cálida bienvenida, disfruta de los mejores
+                desayunos y comidas al mero estilo hogareño para disfrutar en compañia de 
+                los que más quieres.
+            </p>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <!--Horario de apertura-->
+    <section class="horarios">
+        <div class="horariotxt">
+            <h2>Horarios</h2>
+            <p>¡Dias festivos no abrimos!</p>
+        </div>
+        <!--Agrego los datos del horario en una tabla-->
+        <div class="tabla">
+            <table border="1">
+                <thead class="th">
+                    <tr>
+                        <th>Dia</th>
+                        <th>Apertura</th>
+                        <th>Cierre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Lunes</th>
+                        <th>7:00 a.m.</th>
+                        <th>15:00 p.m.</th>
+                    </tr>
+                    <tr>
+                        <th>Martes</th>
+                        <th>7:00 a.m.</th>
+                        <th>15:00 p.m.</th>
+                    </tr>
+                    <tr>
+                        <th>Miercoles</th>
+                        <th>7:00 a.m.</th>
+                        <th>15:00 p.m.</th>
+                    </tr>
+                    <tr>
+                        <th>Jueves</th>
+                        <th>7:00 a.m.</th>
+                        <th>15:00 p.m.</th>
+                    </tr>
+                    <tr>
+                        <th>Viernes</th>
+                        <th>7:00 a.m.</th>
+                        <th>15:00 p.m.</th>
+                    </tr>
+                    <tr>
+                        <th>Sabado</th>
+                        <th>9:00 a.m.</th>
+                        <th>15:00 p.m.</th>
+                    </tr>
+                    <tr>
+                        <th>Domingo</th>
+                        <th>9:00 a.m.</th>
+                        <th>15:00 p.m.</th>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="horacomida">
+                <div class="bloque">
+                    <h3>Desayunos</h3>
+                </div>
+                <p>7:00 a.m. - 10:00 a.m.</p>
+                <div class="bloque">
+                <h3>Comidas</h3>
+                </div>
+                <p>12:00 p.m. - 14:30 p.m.</p>
+            </div>
+        
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <!--Ubicacion-->
+    <section class="ubicacion">
+        <div class="contenedor-ubi">
+            <div class="txtubi">
+                <h2>Estamos ubicados en:</h2>
+                <p>55120 Boulevard Teocallis, Tlaxcaltecas esq, 
+                   55120 Ecatepec de Morelos, Méx.</p>
+            </div>
+            <div>
+                <img src="img/UBI.png" class="imgubi">
+            </div>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <!--Contacto de Restaurante-->
+    <section class="contacto">
+        <div class="contenedor-contacto">
+            <h2>¡Contáctanos y conoce más de nosotros!</h2>
+            <ul type="none">
+                <li><img src="img/CORREO.png" class="imgcont">Correo: elrinconcito@gmail.com</li>
+                <li><img src="img/WA.png" class="imgcont">Telefono: 5598671211</li>
+                <li><img src="img/FACE.png" class="imgcont">Facebook: ElRinconcito_Oficial</li>
+                <li><img src="img/TT.png" class="imgcont">TitkTok: ElRinconcito_Oficial</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <!--Contenedor del pie de pagina donde vienen datos de contacto mios-->
+    <footer class="foot">
+        <div class="piepagina">
+            <ul type="none">
+                <li>Programacion Web 1</li>
+                <li>Grupo: 1507</li>
+                <li>Yojan Espinoza</li>
+                <li>Derechos reservados ©.</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
